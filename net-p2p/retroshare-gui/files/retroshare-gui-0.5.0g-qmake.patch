@@ -1,0 +1,27 @@
+diff -urN --exclude .svn v0.5.0/retroshare-gui/src/RetroShare.pro v0.5.0.new/retroshare-gui/src/RetroShare.pro
+--- v0.5.0/retroshare-gui/src/RetroShare.pro	2010-05-13 20:37:34.328720889 +0200
++++ v0.5.0.svn/retroshare-gui/src/RetroShare.pro	2010-05-13 21:09:45.971469969 +0200
+@@ -20,14 +20,21 @@
+ 	CONFIG += version_detail_bash_script
+ 	QMAKE_CXXFLAGS *= -D_FILE_OFFSET_BITS=64
+ 
++	isEmpty(PREFIX) {
++		PREFIX = /usr
++	}
++
+ 	system(which gpgme-config >/dev/null 2>&1) {
+ 		INCLUDEPATH += $$system(gpgme-config --cflags | sed -e "s/-I//g")
+ 	} else {
+ 		message(Could not find gpgme-config on your system, assuming gpgme.h is in /usr/include)
+ 	}
+ 
+-	LIBS += ../../libretroshare/src/lib/libretroshare.a
+-		LIBS += -lssl -lgpgme -lupnp
++	LIBS += $${PREFIX}/lib/libretroshare.a
++	LIBS += -lssl -lgpgme -lupnp
++
++        target.path = $${PREFIX}/bin
++        INSTALLS *= target
+ }
+ 
+ linux-g++ {

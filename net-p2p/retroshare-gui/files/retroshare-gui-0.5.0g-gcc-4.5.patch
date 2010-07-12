@@ -1,0 +1,51 @@
+diff -urN --exclude .svn v0.5.0/retroshare-gui/src/gui/NetworkDialog.cpp v0.5.0.new/retroshare-gui/src/gui/NetworkDialog.cpp
+--- v0.5.0/retroshare-gui/src/gui/NetworkDialog.cpp	2010-05-06 01:50:54.050231413 +0200
++++ v0.5.0.new/retroshare-gui/src/gui/NetworkDialog.cpp	2010-06-16 13:31:55.756857272 +0200
+@@ -782,29 +782,29 @@
+              
+       if(config.netUpnpOk)
+       {
+-         ui.iconlabel_upnp->setPixmap(QPixmap::QPixmap(":/images/ledon1.png"));
++         ui.iconlabel_upnp->setPixmap(QPixmap(":/images/ledon1.png"));
+       }
+       else
+       {    
+-         ui.iconlabel_upnp->setPixmap(QPixmap::QPixmap(":/images/ledoff1.png"));
++         ui.iconlabel_upnp->setPixmap(QPixmap(":/images/ledoff1.png"));
+       }
+                               
+       if (config.netLocalOk)
+       {
+-	  ui.iconlabel_netLimited->setPixmap(QPixmap::QPixmap(":/images/ledon1.png"));
++	  ui.iconlabel_netLimited->setPixmap(QPixmap(":/images/ledon1.png"));
+       }
+       else
+       {          
+-          ui.iconlabel_netLimited->setPixmap(QPixmap::QPixmap(":/images/ledoff1.png"));
++          ui.iconlabel_netLimited->setPixmap(QPixmap(":/images/ledoff1.png"));
+       }
+ 
+       if (config.netExtraAddressOk)
+       {
+-	  ui.iconlabel_ext->setPixmap(QPixmap::QPixmap(":/images/ledon1.png"));
++	  ui.iconlabel_ext->setPixmap(QPixmap(":/images/ledon1.png"));
+       }
+       else
+       {
+-	  ui.iconlabel_ext->setPixmap(QPixmap::QPixmap(":/images/ledoff1.png"));
++	  ui.iconlabel_ext->setPixmap(QPixmap(":/images/ledoff1.png"));
+       }
+ 
+     rsiface->unlockData(); /* UnLock Interface */
+diff -urN --exclude .svn v0.5.0/retroshare-gui/src/gui/PeersDialog.cpp v0.5.0.new/retroshare-gui/src/gui/PeersDialog.cpp
+--- v0.5.0/retroshare-gui/src/gui/PeersDialog.cpp	2010-05-13 20:37:34.049470534 +0200
++++ v0.5.0.new/retroshare-gui/src/gui/PeersDialog.cpp	2010-06-16 13:31:28.155078139 +0200
+@@ -284,7 +284,7 @@
+       hbox->setSpacing(6);
+     
+       iconLabel = new QLabel( this );
+-      iconLabel->setPixmap(QPixmap::QPixmap(":/images/user/friends24.png"));
++      iconLabel->setPixmap(QPixmap(":/images/user/friends24.png"));
+       iconLabel->setMaximumSize( iconLabel->frameSize().height() + 24, 24 );
+       hbox->addWidget(iconLabel);
+        
