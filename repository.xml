@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>retroshare-overlay</name>
+    <description>experimental retroshare ebuilds</description>
+    <homepage>http://wiki.github.com/leander256/retroshare-overlay/</homepage>
+    <owner type="project">
+      <email>leander256@gmail.com</email>
+      <name>Thomas Kister</name>
+    </owner>
+    <source type="git">git://github.com/leander256/retroshare-overlay.git</source>
+    <source type="git">https://leander256@github.com/leander256/retroshare-overlay.git</source>
+    <feed>http://github.com/leander256/retroshare-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
