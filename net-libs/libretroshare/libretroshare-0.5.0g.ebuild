@@ -15,7 +15,7 @@ S="${WORKDIR}/v0.5.0/libretroshare/src"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="debug"
 
 RDEPEND="app-crypt/gpgme

@@ -16,7 +16,7 @@ S="${WORKDIR}/v0.5.0/retroshare-nogui/src"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="debug"
 
 RDEPEND="=net-libs/libretroshare-${MY_SLOT}*
