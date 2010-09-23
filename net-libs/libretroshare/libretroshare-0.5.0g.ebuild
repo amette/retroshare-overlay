@@ -21,7 +21,8 @@ IUSE="debug"
 RDEPEND="app-crypt/gpgme
 	dev-libs/libgpg-error
 	net-libs/libupnp"
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}
+		x11-libs/qt-core:4"
 
 src_prepare() {
 	epatch "${FILESDIR}/${PF}.patch"
